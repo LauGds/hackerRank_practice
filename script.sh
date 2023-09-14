@@ -28,7 +28,7 @@ if [ ! -d "Documents" ]; then
     chmod 775 Documents
 fi
 find Data -type f -name "*.csv" -exec mv --parents {} Documents/ \;
-chmod 640 -R Documents
+chmod 644 -R Documents
 tar -czvf archive.tar.gz --exclude="*/" Documents/
 count=$(find Documents -type f -not -path '*/\.*' | wc -l)
 echo "Total files in the Documents directory: $count"
