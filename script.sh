@@ -25,7 +25,7 @@
 #!/bin/bash
 if [ ! -d "Documents" ]; then
     mkdir Documents
-    chmod 750 Documents
+    chmod 775 Documents
 fi
 find Data -type f -name "*.csv" -exec mv --parents {} Documents/ \;
 chmod 640 -R Documents
