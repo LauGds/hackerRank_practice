@@ -18,8 +18,8 @@
 # 3. Change the permissions of the Documents directory to read and write for the owner, read-only for the group, and read-only for others
 # 4. Compress the Documents directory (excluding subdirectories) into a tal archive named archive.tar.gz for easy backup using the car command
 # 5. Print the number of files in the Documents directory, excluding subdirectories, to keep track of the file count.
-# 6. Check if there are any files in the Documents directory older than 30 days. If there are print their names and move them to the Backup directory preserving the nested directory structure. Ensure that the script uses the find command to locate the files
-# 7. After completing these tasks, create a log file named script log in the root directory and append a timestamp along with a success message to it. Ensure that the script uses I/O redirection to append the output to the log te
+# 6. Check if there are any files in the Documents directory older than 30 days. If there are print their names and move them to the Backup directory preserving the nested directory structure. Ensure that the script uses the find command to locate the files.
+# 7. After completing these tasks, create a log file named script log in the root directory and append a timestamp along with a success message to it. Ensure that the script uses I/O redirection to append the output to the log file.
 
 
 #!/bin/bash
